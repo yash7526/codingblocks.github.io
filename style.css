@@ -1,0 +1,178 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+         :root {
+            --main-color: #d3ad7f;
+            --black: #13131a;
+            --bg: #010103;
+            --border: .1rem solid rgba(255, 255, 255, .3);
+        }
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            transition: .2s linear;
+        }
+        
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+            scroll-padding-top: 9rem;
+            scroll-behavior: smooth;
+        }
+        
+        html::-webkit-scrollbar {
+            width: .8rem;
+        }
+        
+        html::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        html::-webkit-scrollbar-thumb {
+            background: #fff;
+            border-radius: 5rem;
+        }
+        
+        section {
+            padding: 2rem 7%;
+        }
+        
+        .heading {
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            padding-bottom: 3.5rem;
+            font-size: 4rem;
+        }
+        
+        .heading span {
+            color: var(--main-color);
+            text-transform: uppercase;
+        }
+        
+        .btn {
+            margin-top: 1rem;
+            display: inline-block;
+            padding: .9rem 3rem;
+            font-size: 1.7rem;
+            color: #fff;
+            background: var(--main-color);
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            letter-spacing: .2rem;
+        }
+        
+        .header {
+            background: rgb(36, 13, 13);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px;
+            ;
+            border-bottom: var(--border);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        
+        .styled {
+            border: 1px solid #29d9d5;
+            line-height: 2.5;
+            background: transparent;
+            padding: 0 20px;
+            font-size: 1rem;
+            text-align: center;
+            border-radius: 10px;
+            color: #29d9d5;
+            margin-right: 30px;
+        }
+        
+        .styled:hover {
+            background-color: #29d9d5;
+            color: black;
+        }
+        
+        .header .logo {
+            height: 6rem;
+        }
+        
+        .header .navbar a {
+            margin: 0 1rem;
+            font-size: 1.6rem;
+            color: #fff;
+        }
+        
+        .header .navbar a:hover {
+            color: #29d9d5;
+            ;
+            padding-bottom: .5rem;
+        }
+        
+        .header .icons div {
+            color: #fff;
+            cursor: pointer;
+            font-size: 2.5rem;
+            margin-left: 2rem;
+        }
+        
+        .header .icons div:hover {
+            color: var(--main-color);
+        }
+        
+        .home {
+            margin-top: 107px;
+            /* min-height: 100vh; */
+            display: inline-block;
+            margin-left: 260px;
+            border-radius: 900px;
+            justify-content: center;
+            align-items: center;
+            background: lightpink;
+        }
+        
+        .home h3 {
+            margin: -16px -37px -15px 0px;
+        }
+        
+        .home .content {
+            max-width: 60rem;
+        }
+        
+        .home .content h3 {
+            font-size: 24px;
+            color: darkblue;
+        }
+        
+        .home .content p {
+            font-size: 10px;
+            line-height: 1.8;
+            padding: 1rem 0;
+            color: black;
+        }
+        
+        .photos {
+            display: flex;
+            align-items: center;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 40% 40% 40%;
+            grid-gap: 20px;
+            align-items: stretch;
+        }
+        
+        .grid img {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
